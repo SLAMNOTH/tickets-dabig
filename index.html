@@ -22,16 +22,16 @@
       font-size: 72px;
     }
     
-    
-    
-      .gradient-text2 {
-      background: linear-gradient(45deg, #009aa5, #a56976, #87c7ff);
+    .gradient-text2 {
+      background: linear-gradient(45deg, #ae52ff, #0088ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: Arial, sans-serif;
       font-size: 42px;
     }
-    
+
+
+
     /* Containerstijl */
     .container {
       text-align: center;
@@ -69,18 +69,16 @@
     .ticket .price {
       font-size: 24px;
       font-weight: bold;
-      margin-bottom: 3px;
+      margin-bottom: 13px;
       font-family: 'Poppins', sans-serif;
     }
     
-    
-    .price2 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 20px;
+    /* Beschrijvingstijl */
+    .ticket .description {
+      font-size: 16px;
+      margin-bottom: 10px;
       font-family: 'Poppins', sans-serif;
     }
-    
     
     /* Knopstijl */
     .ticket .buy-button {
@@ -103,10 +101,11 @@
       .gradient-text {
         font-size: 64px;
       }
-      
+
       .gradient-text2 {
         font-size: 34px;
       }
+      
       
       .ticket-section {
         flex-direction: column;
@@ -119,32 +118,130 @@
         height: auto;
       }
     }
+
+
+
+ /* Stijlen voor FAQ-sectie */
+ .faq-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .faq-section h2 {
+    background: linear-gradient(45deg, #ae52ff, #0088ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Arial, sans-serif;
+      font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .faq {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+      font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+  }
+
+  .faq p {
+    font-size: 14px;
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+    display: none;
+  }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="gradient-text">Dabig Festival</h1>
-    <h1 class="gradient-text2">1 juli 2023</h1>
-    <div class="ticket-section">
-      <div class="ticket">
-        <img src="https://i.imgur.com/vSeVWnx.png" alt="Standaard Ticket">
-        <div class="price">Standaard</div>
-        <div class="price2">€50</div> <!-- Added price -->
-        <a href="#" class="buy-button">Koop nu!</a>
+    <div class="container">
+      <h1 class="gradient-text">Dabig Festival</h1>
+      <h1 class="gradient-text2">1 Juli 2023</h1>
+      <div class="ticket-section">
+        <div class="ticket">
+          <img src="https://i.imgur.com/vSeVWnx.png" alt="Standaard Ticket">
+          <div class="price">Standaard</div>
+          <div class="description">Geniet van de geweldige optredens met een standaard ticket.</div>
+          <div class="price">€8</div>
+          <a href="#" class="buy-button">Koop nu!</a>
+        </div>
+        <div class="ticket">
+          <img src="https://i.imgur.com/P9RvM82.png" alt="Premium Ticket">
+          <div class="price">Premium</div>
+          <div class="description">Ervaar het festival in stijl met extra voordelen en privileges. Als Premium klant krijg je 8 muntjes bij entree.</div>
+          <div class="price">€15</div>
+          <a href="#" class="buy-button">Koop nu!</a>
+        </div>
+        <div class="ticket">
+          <img src="https://i.imgur.com/Fnxihiq.png" alt="VIP Ticket">
+          <div class="price">VIP</div>
+          <div class="description">Geniet van de ultieme festivalervaring met exclusieve VIP-behandeling. Als VIP krijg je 20 muntjes bij entree.</div>
+          <div class="price">€30</div>
+          <a href="#" class="buy-button">Koop nu!</a>
+        </div>
       </div>
-      <div class="ticket">
-        <img src="https://i.imgur.com/P9RvM82.png" alt="Premium Ticket">
-        <div class="price">Premium</div>
-        <div class="price2">€100</div> <!-- Added price -->
-        <a href="#" class="buy-button">Koop nu!</a>
-      </div>
-      <div class="ticket">
-        <img src="https://i.imgur.com/Fnxihiq.png" alt="VIP Ticket">
-        <div class="price">VIP</div>
-        <div class="price2">€200</div> <!-- Added price -->
-        <a href="#" class="buy-button">Koop nu!</a>
+      
+      <!-- Veelgestelde vragen -->
+      <div class="faq-section">
+        <h2>Veelgestelde vragen</h2>
+        <div class="faq">
+          <h3 onclick="toggleAnswer(this)">Hoe kan ik kaarten kopen voor Dabig Festival? 🔽</h3>
+          <p>U kunt kaarten kopen voor Dabig Festival door op de "Koop nu!"-knop te klikken bij het gewenste tickettype. U wordt vervolgens omgeleid naar de Ideal betaal pagina.</p>
+        </div>
+
+        <div class="faq">
+            <h3 onclick="toggleAnswer(this)">Wat zijn de verwerkingskosten? 🔽</h3>
+            <p>De verwerkingskosten zijn: €0,55 + 2% van het bedrag. Dus voor een €8 kaartje betaal je: €8,71. Voor een kaartje van €15 betaal je: €15,85. Voor een kaartje van €30 betaal je: €31,15</p>
+          </div>
+
+
+        <div class="faq">
+          <h3 onclick="toggleAnswer(this)">Wat zijn de voordelen van een Premium ticket? 🔽</h3>
+          <p>Met een Premium ticket kunt u het festival in stijl ervaren en profiteren van extra voordelen en privileges. Bij entree ontvangt u 8 muntjes.</p>
+        </div>
+        <div class="faq">
+          <h3 onclick="toggleAnswer(this)">Wat zijn de voordelen van een VIP ticket? 🔽</h3>
+          <p>Een VIP ticket biedt u de ultieme festivalervaring met exclusieve VIP-behandeling. Bij entree ontvangt u 20 muntjes.</p>
+        </div>
+        <div class="faq">
+          <h3 onclick="toggleAnswer(this)">Kan ik mijn ticket annuleren of retourneren? 🔽</h3>
+          <p>Helaas kunnen tickets voor Dabig Festival niet worden geannuleerd of geretourneerd. Zorg ervoor dat u de aankoop zorgvuldig overweegt voordat u kaarten koopt.</p>
+        </div>
+
+        <div class="faq">
+            <h3 onclick="toggleAnswer(this)">Wat kosten muntjes tijdens het Festival? 🔽</h3>
+            <p>Voor elk muntje betaal je: €0,75. Indien je 4 of meer mutnjes koopt krijg je een korting. Zo kosten 10 muntjes €7,35.  </p>
+          </div>
+          <div class="faq">
+            <h3 onclick="toggleAnswer(this)">Zijn er lockers beschikbaar tijdens het Festival? 🔽</h3>
+            <p>Er zijn geen lockers beschikbaar tijdens het festival.  </p>
+          </div>
+          <div class="faq">
+            <h3 onclick="toggleAnswer(this)">Wat is de locatie van het Festival? 🔽</h3>
+            <p>Het festival is in Almelo. De exacte locatie van het festival wordt 2 dagen voorafgaand van festival bekend gemaakt. Het festivalterrein is goed bereikbaar per fiets of auto. </p>
+          </div>
+
       </div>
     </div>
-  </div>
-</body>
+  
+  <script>
+    // Functie om het antwoord van een FAQ-vraag in of uit te vouwen
+    function toggleAnswer(question) {
+      var answer = question.nextElementSibling;
+      if (answer.style.display === "none") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
+    }
+  </script>
+  </body>
 </html>

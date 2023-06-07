@@ -180,21 +180,26 @@
           <div class="price">Standaard</div>
           <div class="description">Geniet van de geweldige optredens met een standaard ticket.</div>
           <div class="price">€8</div>
-          <a href="#" class="buy-button">Koop nu!</a>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="QK8BT9EXPLTGG" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://i.imgur.com/6rMjDTA.png" border="0" name="submit" title="PayPal – de veiligere, gemakkelijkere manier om online te betalen!" alt="Toevoegen aan winkelwagentje" />
+          </form>
         </div>
         <div class="ticket">
           <img src="https://i.imgur.com/P9RvM82.png" alt="Premium Ticket">
           <div class="price">Premium</div>
           <div class="description">Ervaar het festival in stijl met extra voordelen en privileges. Als Premium klant krijg je 8 muntjes bij entree.</div>
           <div class="price">€15</div>
-          <a href="#" class="buy-button">Koop nu!</a>
+          <a href="#" class="buy-button">Uitverkocht!</a>
         </div>
         <div class="ticket">
           <img src="https://i.imgur.com/Fnxihiq.png" alt="VIP Ticket">
           <div class="price">VIP</div>
           <div class="description">Geniet van de ultieme festivalervaring met exclusieve VIP-behandeling. Als VIP krijg je 20 muntjes bij entree.</div>
           <div class="price">€30</div>
-          <a href="#" class="buy-button">Koop nu!</a>
+          <a href="#" class="buy-button">Uitverkocht!</a>
         </div>
       </div>
       
@@ -247,7 +252,7 @@
             <h3 onclick="toggleAnswer(this)">Wat is de locatie van het Festival? 🔽</h3>
             <p>Het festival is in Almelo. De exacte locatie van het festival wordt 2 dagen voorafgaand van festival bekend gemaakt. Het festivalterrein is goed bereikbaar per fiets of auto. </p>
           </div>
-
+         
       </div>
     </div>
   

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dabig Festival - Koop je kaarten!</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    /* Algemene stijlen */
+    body {
+      background-color: #1f1f1f;
+      color: white;
+      font-size: 16px;
+    }
+    
+    /* Gradienttekststijl */
+    .gradient-text {
+      background: linear-gradient(45deg, #8B5AC2, #FF6B8A, #5DB3FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Arial, sans-serif;
+      font-size: 72px;
+    }
+    
+    
+    
+      .gradient-text2 {
+      background: linear-gradient(45deg, #009aa5, #a56976, #87c7ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Arial, sans-serif;
+      font-size: 42px;
+    }
+    
+    /* Containerstijl */
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+    
+    /* Kaartverkoopsectiestijl */
+    .ticket-section {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    /* Kaartstijl */
+    .ticket {
+      display: inline-block;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      background-color: #292929;
+    }
+    
+    /* Afbeeldingsstijl */
+    .ticket img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Prijsstijl */
+    .ticket .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 3px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    .price2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    /* Knopstijl */
+    .ticket .buy-button {
+      background-color: #8B5AC2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Mediaquery voor mobiele apparaten */
+    @media (max-width: 767px) {
+      .container {
+        margin-top: 50px;
+      }
+      
+      .gradient-text {
+        font-size: 64px;
+      }
+      
+      .gradient-text2 {
+        font-size: 34px;
+      }
+      
+      .ticket-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .ticket {
+        width: 80%;
+        margin: 10px 0;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="gradient-text">Dabig Festival</h1>
+    <h1 class="gradient-text2">1 juli 2023</h1>
+    <div class="ticket-section">
+      <div class="ticket">
+        <img src="https://i.imgur.com/vSeVWnx.png" alt="Standaard Ticket">
+        <div class="price">Standaard</div>
+        <div class="price2">€50</div> <!-- Added price -->
+        <a href="#" class="buy-button">Koop nu!</a>
+      </div>
+      <div class="ticket">
+        <img src="https://i.imgur.com/P9RvM82.png" alt="Premium Ticket">
+        <div class="price">Premium</div>
+        <div class="price2">€100</div> <!-- Added price -->
+        <a href="#" class="buy-button">Koop nu!</a>
+      </div>
+      <div class="ticket">
+        <img src="https://i.imgur.com/Fnxihiq.png" alt="VIP Ticket">
+        <div class="price">VIP</div>
+        <div class="price2">€200</div> <!-- Added price -->
+        <a href="#" class="buy-button">Koop nu!</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
